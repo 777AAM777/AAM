@@ -27,9 +27,9 @@ namespace AAM
             int count = (int)numSorCount.Value;
             for (int i = 0; i < count; i++)
             {
-                Label lbl = new Label { Text = $"СОР {i + 1} (балл/макс):", Top = i * 30, Left = 5, Width = 110 };
-                NumericUpDown score = new NumericUpDown { Name = $"score{i}", Top = i * 30, Left = 120, Width = 60, Maximum = 100, DecimalPlaces = 1 };
-                NumericUpDown max = new NumericUpDown { Name = $"max{i}", Top = i * 30, Left = 190, Width = 60, Value = 10, Maximum = 100 };
+                Label lbl = new Label { Text = $"СОР {i + 1} (балл/макс):", Top = i * 30, Left = 5, Width = 110, ForeColor = System.Drawing.Color.Black };
+                NumericUpDown score = new NumericUpDown { Name = $"score{i}", Top = i * 30, Left = 120, Width = 60, Maximum = 100, DecimalPlaces = 1, ForeColor = System.Drawing.Color.Black };
+                NumericUpDown max = new NumericUpDown { Name = $"max{i}", Top = i * 30, Left = 190, Width = 60, Value = 10, Maximum = 100, ForeColor = System.Drawing.Color.Black };
                 pnlSor.Controls.Add(lbl);
                 pnlSor.Controls.Add(score);
                 pnlSor.Controls.Add(max);

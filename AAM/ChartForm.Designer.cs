@@ -26,6 +26,7 @@ namespace AAM
             this.columnHeaderQuarter = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblOverall = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.SuspendLayout();
             // 
             // chart1
@@ -38,11 +39,10 @@ namespace AAM
             this.chart1.ChartAreas[0].AxisX.Title = "Предметы";
             this.chart1.ChartAreas[0].AxisY.Title = "Процент (%)";
             this.chart1.Legends[0].Title = "Периоды";
-            this.chart1.Location = new System.Drawing.Point(12, 12);
             this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(760, 300);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             // 
             // listView1
             // 
@@ -55,10 +55,9 @@ namespace AAM
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 320);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(760, 200);
             this.listView1.TabIndex = 1;
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
@@ -90,16 +89,31 @@ namespace AAM
             // lblOverall
             // 
             this.lblOverall.AutoSize = true;
-            this.lblOverall.Location = new System.Drawing.Point(12, 525);
             this.lblOverall.Name = "lblOverall";
-            this.lblOverall.Size = new System.Drawing.Size(0, 13);
             this.lblOverall.TabIndex = 2;
+            this.lblOverall.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblOverall.Padding = new System.Windows.Forms.Padding(8);
+            this.lblOverall.ForeColor = System.Drawing.Color.Black;
+            this.lblOverall.BackColor = System.Drawing.Color.Transparent;
             // 
             // ChartForm
             // 
-            this.ClientSize = new System.Drawing.Size(800, 560);
-            this.Controls.Add(this.chart1);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(900, 600);
+            // tableLayoutPanel1
+            //
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(8);
+            this.tableLayoutPanel1.Controls.Add(this.chart1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.listView1, 0, 1);
+
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblOverall);
             this.Name = "ChartForm";
             this.Text = "График";
@@ -118,5 +132,6 @@ namespace AAM
         private System.Windows.Forms.ColumnHeader columnHeaderYear;
         private System.Windows.Forms.ColumnHeader columnHeaderQuarter;
         private System.Windows.Forms.Label lblOverall;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

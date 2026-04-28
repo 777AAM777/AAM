@@ -1,0 +1,9 @@
+C:\Users\Ainur\source\repos\AAM\AAM\obj\Debug\AAM.csproj.AssemblyReference.cache
+C:\Users\Ainur\source\repos\AAM\AAM\obj\Debug\AAM.Properties.Resources.resources
+C:\Users\Ainur\source\repos\AAM\AAM\obj\Debug\AAM.csproj.GenerateResource.cache
+C:\Users\Ainur\source\repos\AAM\AAM\obj\Debug\AAM.csproj.CoreCompileInputs.cache
+C:\Users\Ainur\source\repos\AAM\AAM\bin\Debug\AAM.exe.config
+C:\Users\Ainur\source\repos\AAM\AAM\bin\Debug\AAM.exe
+C:\Users\Ainur\source\repos\AAM\AAM\bin\Debug\AAM.pdb
+C:\Users\Ainur\source\repos\AAM\AAM\obj\Debug\AAM.exe
+C:\Users\Ainur\source\repos\AAM\AAM\obj\Debug\AAM.pdb
